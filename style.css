@@ -1,104 +1,172 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-    display: block;
-    color: black;
-}
-li{
-    list-style-type: none;
-}
-
-.container{
-width: 100%;
-height: 1200px;
-background: url(은하.jpg);
-
-background: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)   ) url(은하.jpg) no-repeat;
-background-size: cover;
-
-color: white;
-}
-.header{
-width: 100%;
-height: 100px;
-
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-.logo{
+    margin: 0;/*바깥쪽 여백 : 0*/
+    padding: 0;/*안쪽 여백 : 0*/
+    box-sizing: border-box; /*테두리두께 무시*/
+  
+    
+  }
+  a{
+    text-decoration: none; /*밑줄 제거*/
+    display: block; /*a태그를 블록요소로 변경*/
+    color: black; /*글자색 : black*/
+  }
+  li{
+    list-style-type: none; /*li태그 기호 제거*/
+  }
+  
+  .container{
+    width: 100%;
+    height: 1200px;
+  
+    background: linear-gradient( rgba(0,0,0,0.8)   , rgba(0,0,0,0.8)    )         ,url(존잘징징이.jpg) no-repeat;
+    background-size: cover;
+    
+    color: white;
+    
+  
+  }
+  .header{
+    width: 100%;
+    height: 100px;
+  
+    display: flex; /*자식요소들을 가로로 배치*/
+    justify-content: space-between; /*가로로 어떻게 배치할지 : space-between*/
+    align-items: center; /*세로로 어떻게 배치할지 : center*/
+  }
+  
+  .logo{
     width: 200px;
     height: 80px;
-
+  
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-}
-.logo:hover{
-    color: aqua;
-
-}
-.menu{
+  
+    transition: 0.3s;
+  }
+  .logo:hover{
+    color: #ff6a6a;
+  
+  }
+  
+  
+  
+  .menu{
     width: 400px;
     height: 100px;
-
+  
     display: flex;
     align-items: center;
-
-}
-.menu li{
+  
+  }
+  .menu li{
     width: 25%;
     text-align: center;
-}
-.menu li a{
+  }
+  .menu li a{
+  
     color: white;
-
-}
-.menu li a:hover{
-
+    transition: 0.3s;
+  }
+  .menu li a:hover{
     color: #ff6a6a;
-}
-.main{
-width: 1200px;
-height: 800px;
-margin: 0 auto;
-
-margin-top: 150px;
-
-text-align: center;
-
-}
-.main h1{
-font-size: 50px;
-margin-bottom: 50px;
-}
-.main h2{
-font-size: 40px;
-margin-bottom: 30px;
-}
-.main p{
-font-size: 30px;
-margin-bottom: 50px;
-}
-.main button{
-font-size: 30px;
-width: 300px;
-height: 100px;
-
-
-border: 1px solid white;
-border-radius: 30px;
-background-color: transparent;
-
-color: white;
-transition: 0.3s;
-
-}
-.main button:hover{
+  }
+  
+  
+  .main{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+  
+    margin-top: 150px;
+  
+    text-align: center;
+  }
+  .main h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .main h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .main p{
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .main button{
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+  
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+  
+  
+    color: white;
+    transition: 0.3s;
+  }
+  .main button:hover{
     background-color: white;
-    color: black
-}
+    color: black;
+  
+  
+  }
+  
+  .about{
+    width: 1200px;
+    height: 800px;
+  
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+  .about h2{
+    font-size: 30px;
+    color: #ff6a6a;
+  
+  }
+  .about h1{
+    font-size: 50px;
+  }
+  .about .contents{
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+
+  }
+  .about .left{
+    width: 400px;
+    height: 500px;
+  }
+  .about .left img{
+    width: 400px;
+    height: 600px;
+  }
+  .about .right{
+    width: 800px;
+    height: 500px;
+    padding-left: 10px;
+  
+  }
+  .about .right h3{
+    color: #ff6a6a;
+    font-size: 30px;
+  }
+  .about .right li{
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  .fa-brands{
+    font-size: 50px;
+    margin-right: 6px;
+  }
+  .fa-youtube{
+    color: red;
+    font-size: 50px;
+  }
+  .fa-facebook{
+    color: #3b5998;
+  }
+  
