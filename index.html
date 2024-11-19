@@ -1,181 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<title>강원천문대</title>
+	<link rel="stylesheet" href="css/style.css">
 
-
-  <link rel="stylesheet" href="style.css">
-  
-  
 </head>
+
 <body>
-  
-  <div class="container">
-    <div class="header">
-      <div class="logo">
-        <img src="images/logo1.png" alt="">
-      </div>
-      <ul class="main-menu">
-       <li>메인메뉴1
-        <ul class="sub-menu">
-          <li>서브메뉴1-1</li>
-          <li>서브메뉴1-2</li>
-          <li>서브메뉴1-3</li>
-          <li>서브메뉴1-4</li>
-        </ul>
-       </li>
-       <li>메인메뉴2
-        <ul class="sub-menu">
-          <li>서브메뉴2-1</li>
-          <li>서브메뉴2-2</li>
-          <li>서브메뉴2-3</li>
-          <li>서브메뉴2-4</li>
-        </ul>
-       </li>
-       <li>메인메뉴3
-        <ul class="sub-menu">
-          <li>서브메뉴3-1</li>
-          <li>서브메뉴3-2</li>
-          <li>서브메뉴3-3</li>
-          <li>서브메뉴3-4</li>
-        </ul>
 
-       </li>
-       <li>메인메뉴4
-        <ul class="sub-menu">
-          <li>서브메뉴4-1</li>
-          <li>서브메뉴4-2</li>
-          <li>서브메뉴4-3</li>
-          <li>서브메뉴4-4</li>
-        </ul>
-
-       </li>
-
-      </ul>
-    </div>
-    <div class="slide">
-      <img src="images/s1.jpg" alt="">
+	<!-- 레이어 팝업 영역 -->
+	<div class="modal">
+		<div class="modal_inner">
+			<p class="tit">
+				강원천문대와 함께하는 문화가 있는 날
+			</p>
+			<ul class="txt">
+				<li>매월 마지막주 수요일!!!</li>
+				<li>15:30~16:30 태양관측
+				<li>
+				<li>16:30~17:30 가상별자리 여행</li>
+			</ul>
+			<p class="txt">태양관측은 날씨가 좋지 않아 관측이 안될 경우 <br> 천문학 기초강의로 변경됩니다.</p>
+			<input type="button" class="btn close-modal" value="X닫기">
+		</div>
+	</div>
 
 
-    </div>
-    <div class="contents">
-        <div class="box">
+	<div class="modal-back"></div>
 
-          <button class="btn-notice">공지사항</button>
-          <button class="btn-gallery">갤러리</button>
+	<div class="wrap">
+		<!-- 헤더 영역 -->
+		<header class="clearfix">
+			<!-- 로고 영역 -->
+			<h1>
+				<a href="#">
+					<img src="images/logo1.png" alt="강원천문대">
+				</a>
+			</h1>
+			<!-- 메뉴 영역 -->
+			<nav>
+				<ul class="gnb clearfix">
+					<li><a href="#">강원천문대</a>
+						<ul class="sub">
+							<li><a href="#">천문대소개</a></li>
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+					</li>
+					<li><a href="#">이용안내</a>
+						<ul class="sub">
+							<li><a href="#">프로그램</a></li>
+							<li><a href="#">관람시간표</a></li>
+							<li><a href="#">이달의별자리</a></li>
+						</ul>
+					</li>
+					<li><a href="#">천문대예약</a>
+						<ul class="sub">
+							<li><a href="#">예약하기</a></li>
+							<li><a href="#">예약확인</a></li>
+							<li><a href="#">예약취소</a></li>
+						</ul>
+					</li>
+					<li><a href="#">커뮤니티</a>
+						<ul class="sub">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">방문후기</a></li>
+							<li><a href="#">자유게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- 슬라이드 이미지 영역 -->
+		<ul class="slide">
+			<li><a href="#"><img src="images/s1.jpg" alt="별과 함께 가족과 함께"></a></li>
+			<li><a href="#"><img src="images/s2.jpg" alt="연예인과 함께하는 별하늘 콘서트"></a></li>
+			<li><a href="#"><img src="images/s3.jpg" alt="강원 천문대 방문객 이벤트"></a></li>
+		</ul>
+
+		<!-- 콘텐츠 영역 -->
+		<div class="contents clearfix">
+
+			<!-- 공지사항/갤러리 탭 영역 -->
+			<section class="notice_gal">
+				<!-- 공지사항 영역 -->
+				<h3 class="on btn-notice"><a href="#">공지사항</a></h3>
+				<ul class="notice on">
+					<li class="open-modal"><a href="#">2019년 8월 문화가 있는 날 안내<span class="day">2019-08-01</span></a></li>
+					<li><a href="#">온라인 예매 시 안내사항<span class="day">2019-09-31</span></a></li>
+					<li><a href="#">2018년 12월 예매 및 휴관일 안내<span class="day">2018-11-20</span></a></li>
+					<li><a href="#">스마트폰 예매시 주의사항 안내<span class="day">2018-10-05</span></a></li>
+					<li><a href="#">결재 관련 설치 프로그램 지원<span class="day">2018-06-02</span></a></li>
+				</ul>
+				<!-- 갤러리 영역 -->
+				<h3 class="gal_txt btn-gal"><a href="#">갤러리</a></h3>
+				<ul class="gal">
+					<li><a href="#"><img src="images/g1.png" alt="별자리찾기"></a></li>
+					<li><a href="#"><img src="images/g2.png" alt="별이야기"></a></li>
+					<li><a href="#"><img src="images/g3.png" alt="5월별밤"></a></li>
+				</ul>
+			</section>
+			<!-- 배너 영역 -->
+			<section class="banner">
+				<h3>배너존</h3>
+				<a href="#">
+					<img src="images/b1.jpg" alt="배너">
+				</a>
+			</section>
+			<!-- 바로가기 영역	 -->
+			<section class="baro">
+				<h3>바로가기</h3>
+				<ul>
+					<li><a href="#">방문객센터</a></li>
+					<li><a href="#">새소식</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+			</section>
+		</div>
+
+		<!-- 푸터 영역	 -->
+		<footer class="clearfix">
+			<h1>
+				<a href="#"><img src="images/logo2.png" alt="강원천문대"></a>
+			</h1>
+			<ul class="f_menu">
+				<li><a href="#">법적고지</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+			</ul>
+			<ul class="copy">
+				<li>대표자 : 김철수</li>
+				<li>사업자등록번호 : 605-82-05242</li>
+				<li>전화번호 : (033) 709-0700</li>
+				<li>Copyrightⓒ2019 by Gangwon Observatory. All rights reserved.</li>
+			</ul>
+		</footer>
+	</div>
 
 
-          <div class="notice">
-            <ul>
-              <li class="open-pop">2024년도 블랙프라이데이 초특가 할인행사</li>
-              <li>연말을 맞이하여 1+1 추가 할인혜택 누려보세요~</li>
-              <li>신규고객을 위한 맞춤형 서비스에 놀라지마세요</li>
-              <li>수원점 JUST 쇼핑몰 Grand Open 할인행사</li>
-              <li>지금당장 회원가입을 하시면 3000포인트 증정</li>
-            </ul>
-          </div>
-          
-          <div class="gallery">
-            <ul>
-              <li><img src="images/g2.jpg" alt=""></li>
-              <li><img src="images/g3.jpg" alt=""></li>
-              <li><img src="images/g2.jpg" alt=""></li>
-            </ul>
-          </div>
-
-
-
-        </div>
-
-
-       
-
-    
-
-
-      <div class="banner">
-        <img src="images/b1.jpg" alt="">
-
-      </div>
-      <div class="baro">
-        <img src="images/g3.jpg" alt="">
-
-      </div>
-
-    </div>
-    <div class="footer">
-      <div class="logo">
-        <img src="images/logo2.png" alt="">
-      </div>
-      <div class="copy">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci expedita consequuntur nulla, dolore enim architecto quia iure sed ipsa dolor totam, quam, porro aliquam tempora corrupti rem impedit dignissimos culpa?
-      </div>
-
-    </div>
-  </div>
-
-  <div class="pop">
-    <h1>!!2024 초특가 연말세일!!</h1>
-    <p>5만원 이상 구매시 30% 할인</p>
-    <p>10만원 이상 구매시 뺴빼로 증정</p>
-    <p>크리스마스 한정 JUST쇼핑몰 인형 증정</p>
-
-    <button class="close-pop">닫기</button>
-  </div>
-  
-
-
-
-
-  
-  <!-- 제이쿼리 -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script>
-      
-
-    //첫번째 공지사항을 클릭하면 팝업창이 나타난다.
-    $(".open-pop").click(function(){
-      $(".pop").show();
-    })
-
-    //닫기버튼을 클릭하면 팝업창이 사라진다.
-    $(".close-pop").click(function(){
-      $(".pop").hide();
-    })
-
-
-
-    //갤러리 버튼을 클릭하면 
-    //1. 갤러리 영역이 나타난다.
-    //2. 공지사항 영역은 사라진다.
-    $(".btn-gallery").click(function(){
-      $(".gallery").show();
-      $(".notice").hide();
-    })
-
-    //공지사항 버튼을 클릭하면
-    //1. 공지사항 영역은 나타난다.
-    //2. 갤러리 영역은 사라진다.
-    $(".btn-notice").click(function(){
-      $(".notice").show();
-      $(".gallery").hide();
-    })
-
-
-    //메인메뉴한테 마우스를 올렸을때 서브메뉴 나타남
-    $(".main-menu>li").mouseover(function(){
-      $(this).children(".sub-menu").stop(true,true).show();
-    })
-
-    //메인메뉴한테 마우스가 떨어질때 서브메뉴가 사라짐
-    $(".main-menu>li").mouseleave(function(){
-      $(this).children(".sub-menu").stop(true,true).hide();
-    })
-
-  </script>
-  
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+		crossorigin="anonymous"></script>
+	<script src="script/script.js"></script>
 
 </body>
+
 </html>
